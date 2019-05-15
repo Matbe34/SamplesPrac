@@ -1,6 +1,9 @@
 Tabla de frecuencias de idioma_corto:
-: 0
-k 0
+: 12
+] 3
+k 3
+p 8
+î 4
 
 Tabla de frecuencias de idioma_medio:
 ! 2
@@ -15,13 +18,25 @@ Tabla de frecuencias de idioma_medio:
 
 Treecode de idioma_corto:
 recorrido en preorden:
-:k 0
-: 0
-k 0
+:]kîp 30
+: 12
+]kîp 18
+p 8
+]kî 10
+î 4
+]k 6
+] 3
+k 3
 recorrido en inorden:
-: 0
-:k 0
-k 0
+: 12
+:]kîp 30
+p 8
+]kîp 18
+î 4
+]kî 10
+] 3
+]k 6
+k 3
 
 Treecode de idioma_medio:
 recorrido en preorden:
@@ -63,7 +78,10 @@ recorrido en inorden:
 
 Codigos de idioma_corto:
 : 0
-k 1
+] 1110
+k 1111
+p 10
+î 110
 
 Codigo de : en idioma_corto:
 : 0
@@ -89,20 +107,24 @@ Codigo de % en idioma_medio:
 El idioma no existe o el caracter no esta en el idioma
 
 Codifica en idioma_corto el texto:
-::::kk:
-0000110
+î]]k::k:pk:î
+11011101110111100111101011110110
 
 Codifica en idioma_corto el texto:
 flijrejighirosg
 El texto no pertenece al idioma; primer caracter que falla: f
 
 Codifica en idioma_corto el texto:
-kk::k:ll:k
-El texto no pertenece al idioma; primer caracter que falla: l
+kî]]k:k:pkK:î
+El texto no pertenece al idioma; primer caracter que falla: K
+
+Decodifica en idioma_corto el texto:
+11011101110111100111101011110110
+î]]k::k:pk:î
 
 Decodifica en idioma_corto el texto:
 00010010101001
-:::k::k:k:k::k
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 13
 
 Codifica en idioma_medio el texto:
 ü*!!?¿¡&&#
@@ -124,46 +146,67 @@ Modificado idioma_corto
 
 Tabla de frecuencias de idioma_corto:
 * 0
-: 0
+: 12
+] 3
 j 3
-k 8
+k 11
+p 8
+î 4
 
 Treecode de idioma_corto:
 recorrido en preorden:
-*:jk 11
-*:j 3
-*: 0
+*]jîp:k 41
+*]jîp 18
+p 8
+*]jî 10
+î 4
+*]j 6
+*] 3
 * 0
-: 0
+] 3
 j 3
-k 8
+:k 23
+k 11
+: 12
 recorrido en inorden:
+p 8
+*]jîp 18
+î 4
+*]jî 10
 * 0
-*: 0
-: 0
-*:j 3
+*] 3
+] 3
+*]j 6
 j 3
-*:jk 11
-k 8
+*]jîp:k 41
+k 11
+:k 23
+: 12
 
-Codigos de idioma_medio:
-! 1110
-" 1111
-# 000
-& 001
-* 010
-? 011
-¡ 100
-¿ 101
-ü 110
+Codigos de idioma_corto:
+* 01100
+: 11
+] 01101
+j 0111
+k 10
+p 00
+î 010
 
 Codifica en idioma_corto el texto:
-:jj::kk:
-001010100100111001
+:jj:**:kk:
+110111011111011000110011101011
 
 Codifica en idioma_corto el texto:
 jj::k:lkjK
 El texto no pertenece al idioma; primer caracter que falla: l
+
+Decodifica en idioma_corto el texto:
+11011101110111100111101011110110
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 28
+
+Decodifica en idioma_corto el texto:
+011000110101111000
+*]jkp
 
 Anadido idioma_cortisimo
 
@@ -204,4 +247,8 @@ Codifica en idioma_cortisimo el texto:
 Codifica en idioma_cortisimo el texto:
 (()(666l6l6
 El texto no pertenece al idioma; primer caracter que falla: )
+
+Decodifica en idioma_cortisimo el texto:
+0111
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 3
 

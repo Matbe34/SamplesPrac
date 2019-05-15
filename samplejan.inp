@@ -1,9 +1,12 @@
 2     
 
 idioma_corto
-2
-k 0
-: 0
+5
+k 3
+p 8
+î 4
+] 3  
+: 12
 
 idioma_medio
 9
@@ -38,13 +41,16 @@ codigos idioma_medio ü
 codigos idioma_medio %
 
 codifica idioma_corto
-::::kk:
+î]]k::k:pk:î
 
 codifica idioma_corto
 flijrejighirosg
 
 codifica idioma_corto 
-kk::k:ll:k
+kî]]k:k:pkK:î
+
+decodifica idioma_corto
+11011101110111100111101011110110
 
 decodifica idioma_corto
 00010010101001
@@ -71,13 +77,19 @@ tabla_frec idioma_corto
 
 treecode idioma_corto
 
-codigos idioma_medio todos
+codigos idioma_corto todos
 
 codifica idioma_corto
-:jj::kk:
+:jj:**:kk:
 
 codifica idioma_corto
 jj::k:lkjK
+
+decodifica idioma_corto
+11011101110111100111101011110110
+
+decodifica idioma_corto
+011000110101111000
 
 anadir/modificar idioma_cortisimo
 3
@@ -100,5 +112,8 @@ codifica idioma_cortisimo
 
 codifica idioma_cortisimo
 (()(666l6l6
+
+decodifica idioma_cortisimo 
+0111
 
 fin
