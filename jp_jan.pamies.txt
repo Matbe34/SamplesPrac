@@ -1,6 +1,6 @@
 ENTRADA COMENTADA
 
-//Creem dos idiomes amb caràcters especials i en el segon cas tots els caràcters amb la mateixa freqüència.
+    //Creem dos idiomes amb caràcters especials i en el segon cas tots els caràcters amb la mateixa freqüència.
 2
 
 idioma_corto
@@ -23,8 +23,8 @@ idioma_medio
 ? 2
 ¿ 2
 
-//Cridem que escriguin la taula de freqüència, els treecodes i les taules de codis dels dos idiomes per poder comprovar
-//amb més facilitat si hi ha algun error més endavant.
+    //Cridem que escriguin la taula de freqüència, els treecodes i les taules de codis dels dos idiomes per
+    //poder comprovar amb més facilitat si hi ha algun error més endavant.
 tabla_frec idioma_corto
 
 tabla_frec idioma_medio
@@ -37,7 +37,7 @@ codigos idioma_corto todos
 
 codigos idioma_medio todos
 
-//Demanem en els dos idiomes un codi d'un caràcter que existeix i un que no per veure el que fa en cada cas.
+    //Demanem en els dos idiomes un codi d'un caràcter que existeix i un que no per veure el que fa en cada cas.
 codigos idioma_corto :
 
 codigos idioma_corto 7
@@ -46,8 +46,8 @@ codigos idioma_medio ü
 
 codigos idioma_medio %
 
-//En l'idioma_corto mirarem tres casos de codificar, un correcte, un incorrecte per un caràcter especial i un
-//últim incorrecte que l'únic caràcter incorrecte serà una lletra que està en l'idioma però en majúscula.
+    //En l'idioma_corto mirarem tres casos de codificar, un correcte, un incorrecte per un caràcter especial i un
+    //últim incorrecte que l'únic caràcter incorrecte serà una lletra que està en l'idioma però en majúscula.
 codifica idioma_corto
 î]]k::k:pk:î
 
@@ -57,75 +57,75 @@ kköli]]:]:,irosg
 codifica idioma_corto 
 kî]]k:k:pkK:î
 
-//Ara en l'idioma_corto decodificarem un idioma correcte en l'idioma i un d'incorrecte. 
+    //Ara en l'idioma_corto decodificarem un idioma correcte en l'idioma i un d'incorrecte. 
 decodifica idioma_corto
 11011101110111100111101011110110
 
 decodifica idioma_corto
 00010010101001
 
-//En l'idioma_medio codificarem dos strings, una correcte i una incorrecte en l'idioma.
+    //En l'idioma_medio codificarem dos strings, una correcte i una incorrecte en l'idioma.
 codifica idioma_medio
 ü*!!?¿¡&&#
 
 codifica idioma_medio
 üüü**??¿!jj*ü
 
-//Ara en l'idioma_medio decodificarem un idioma correcte en l'idioma i un d'incorrecte. 
+    //Ara en l'idioma_medio decodificarem un idioma correcte en l'idioma i un d'incorrecte. 
 decodifica idioma_medio
 110111111100001011
 
 decodifica idioma_medio
 001101001101011
 
-//Modifiquem l'idioma_corto per veure si el programa té algun problema al modificar un idioma ja existent.
+    //Modifiquem l'idioma_corto per veure si el programa té algun problema al modificar un idioma ja existent.
 anadir/modificar idioma_corto
 3
 k 8
 j 3
 * 0
 
-//Cridem la taula de freqüència, el treecode i la taula de codis per veure si s'han modificat bé.
+    //Cridem la taula de freqüència, el treecode i la taula de codis per veure si s'han modificat bé.
 tabla_frec idioma_corto
 
 treecode idioma_corto
 
 codigos idioma_corto todos
 
-//Provem de codificar un cas que ara és correcte i abans no, i un incorrecte.
+    //Provem de codificar un cas que ara és correcte i abans no, i un incorrecte.
 codifica idioma_corto
 :jj:**:kk:
 
 codifica idioma_corto
 jj::k:lkjK
 
-//Decodifiquem un cas correcte per l'idioma_corto modificat i un que sigui incorrecte.
+    //Decodifiquem un cas correcte per l'idioma_corto modificat i un que sigui incorrecte.
 decodifica idioma_corto
 11011101110111100111101011110110
 
 decodifica idioma_corto
 011000110101111000
 
-//Afegim un idioma nou per veure si el programa té algun problema al afegir un idioma nou a la col·lecció d'idiomes.
+    //Afegim un idioma nou per veure si el programa té algun problema al afegir un idioma nou a la col·lecció d'idiomes.
 anadir/modificar idioma_cortisimo
 3
 6 7
 ( 11
 l 12
 
-//Comprovem que s'ha afegit bé cridant a la taula de freqüències, el treecode i la taula de codis.
+    //Comprovem que s'ha afegit bé cridant a la taula de freqüències, el treecode i la taula de codis.
 tabla_frec idioma_cortisimo
 
 treecode idioma_cortisimo
 
 codigos idioma_cortisimo todos
 
-//Demanem el codi de un caràcter existent i un que no existeix en l'idioma.
+    //Demanem el codi de un caràcter existent i un que no existeix en l'idioma.
 codigos idioma_cortisimo 6
 
 codigos idioma_cortisimo 9
 
-//Codifiquem una string correcte i una incorrecte en l'idioma, i decodifiquem un codi incorrecte.
+    //Codifiquem una string correcte i una incorrecte en l'idioma, i decodifiquem un codi incorrecte.
 codifica idioma_cortisimo
 6((ll6((l
 
@@ -270,9 +270,9 @@ fin
 
 
 
-SALIDA SIN COMENTAR
+SALIDA COMENTADA
 
-
+    //S'escriuran la taula de freqüencia, el treecode i la taula de codis dels dos idiomes.
 Tabla de frecuencias de idioma_corto:
 : 12
 ] 3
@@ -358,12 +358,6 @@ k 1111
 p 10
 î 110
 
-Codigo de : en idioma_corto:
-: 0
-
-Codigo de 7 en idioma_corto:
-El idioma no existe o el caracter no esta en el idioma
-
 Codigos de idioma_medio:
 ! 1110
 " 1111
@@ -375,12 +369,21 @@ Codigos de idioma_medio:
 ¿ 101
 ü 110
 
+    //Comprovarem casos correctes i casos incorrectes en els dos idiomes.
+Codigo de : en idioma_corto:
+: 0
+
+Codigo de 7 en idioma_corto:
+El idioma no existe o el caracter no esta en el idioma
+
 Codigo de ü en idioma_medio:
 ü 110
 
 Codigo de % en idioma_medio:
 El idioma no existe o el caracter no esta en el idioma
 
+    //Mirarem que tres diferents casos de codifica(un correcte i dos incorrectes, un caràcter especial i un que
+    //l'únic caràcter incorrecte serà una lletra que està en l'idioma però en majúscula) són escrits com toca.
 Codifica en idioma_corto el texto:
 î]]k::k:pk:î
 11011101110111100111101011110110
@@ -393,6 +396,8 @@ Codifica en idioma_corto el texto:
 kî]]k:k:pkK:î
 El texto no pertenece al idioma; primer caracter que falla: K
 
+    //Decodifiquem, un correcte i un incorrecte, i veiem que el resultat és l'esperat(en el segon cas decodificaria 
+    //:::p:ppp: i l'últim numero no el pot decodificar).
 Decodifica en idioma_corto el texto:
 11011101110111100111101011110110
 î]]k::k:pk:î
@@ -401,6 +406,7 @@ Decodifica en idioma_corto el texto:
 00010010101001
 El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 13
 
+    //Ara mirem si codifica i decodifica adequadament amb idioma_medio.
 Codifica en idioma_medio el texto:
 ü*!!?¿¡&&#
 11001011101110011101100001001000
@@ -409,6 +415,7 @@ Codifica en idioma_medio el texto:
 üüü**??¿!jj*ü
 El texto no pertenece al idioma; primer caracter que falla: j
 
+    //Es quedaria al 17 ja que decodificaria ü"!#¿ però al següent ja no pot.
 Decodifica en idioma_medio el texto:
 110111111100001011
 El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 17
@@ -417,8 +424,10 @@ Decodifica en idioma_medio el texto:
 001101001101011
 &¿&¿?
 
+    //Aquí l'idioma_corto és modificat.
 Modificado idioma_corto
 
+    //Comprovem que s'ha modificat bé mirant la taula de freqüència, el treecode i la taula de codis de l'idioma.
 Tabla de frecuencias de idioma_corto:
 * 0
 : 12
@@ -467,6 +476,7 @@ k 10
 p 00
 î 010
 
+    //Mirem com codifica i decodifica tant casos correctes com incorrectes l'idioma modificat.
 Codifica en idioma_corto el texto:
 :jj:**:kk:
 110111011111011000110011101011
@@ -475,6 +485,7 @@ Codifica en idioma_corto el texto:
 jj::k:lkjK
 El texto no pertenece al idioma; primer caracter que falla: l
 
+    //Decodificat fins el caràcter 28 quedaria :jjjkjkk, però a partir d'aquí no pot seguir..
 Decodifica en idioma_corto el texto:
 11011101110111100111101011110110
 El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 28
@@ -483,6 +494,7 @@ Decodifica en idioma_corto el texto:
 011000110101111000
 *]jkp
 
+    //Afegim un idioma nou i mirem que, efectivament, la taula de freqncies, el treecode i la taula de codis són correctes.
 Anadido idioma_cortisimo
 
 Tabla de frecuencias de idioma_cortisimo:
@@ -509,12 +521,14 @@ Codigos de idioma_cortisimo:
 6 10
 l 0
 
+    //Mirem els caràcters del nou idioma a veure si estan bé.
 Codigo de 6 en idioma_cortisimo:
 6 10
 
 Codigo de 9 en idioma_cortisimo:
 El idioma no existe o el caracter no esta en el idioma
 
+    //Per acabar, codifiquem i decodifiquem amb el nou idioma i veiem que els resultats són els optims.
 Codifica en idioma_cortisimo el texto:
 6((ll6((l
 101111001011110
@@ -523,6 +537,7 @@ Codifica en idioma_cortisimo el texto:
 (()(666l6l6
 El texto no pertenece al idioma; primer caracter que falla: )
 
+    //Queda l( però l'últim 1 no pot ser decodificat.
 Decodifica en idioma_cortisimo el texto:
 0111
 El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 3
@@ -533,7 +548,6 @@ El texto no procede de una codificacion del idioma; ultima posicion del codigo c
 
 
 SALIDA SIN COMENTAR
-
 
 Tabla de frecuencias de idioma_corto:
 : 12
@@ -620,12 +634,6 @@ k 1111
 p 10
 î 110
 
-Codigo de : en idioma_corto:
-: 0
-
-Codigo de 7 en idioma_corto:
-El idioma no existe o el caracter no esta en el idioma
-
 Codigos de idioma_medio:
 ! 1110
 " 1111
@@ -636,6 +644,12 @@ Codigos de idioma_medio:
 ¡ 100
 ¿ 101
 ü 110
+
+Codigo de : en idioma_corto:
+: 0
+
+Codigo de 7 en idioma_corto:
+El idioma no existe o el caracter no esta en el idioma
 
 Codigo de ü en idioma_medio:
 ü 110
